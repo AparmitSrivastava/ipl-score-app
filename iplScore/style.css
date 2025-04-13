@@ -13,6 +13,7 @@ body{
     font-weight: bolder;
     font-size: 26px;
     padding: 0 10px;
+    background-color:rgb(163, 27, 163) ;
 }
 nav{
     display: flex;
