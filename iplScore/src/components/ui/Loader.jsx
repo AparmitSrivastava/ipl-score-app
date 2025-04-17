@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LoadingSpinner = ({ size = "md", className = "" }) => {
+ export const LoadingSpinner = ({ size = "md", className = "" }) => {
   const sizeClasses = {
     sm: "w-4 h-4",
     md: "w-8 h-8",
@@ -35,4 +35,4 @@ const LoadingSpinner = ({ size = "md", className = "" }) => {
   );
 };
 
-export default LoadingSpinner;
+// export default LoadingSpinner;
