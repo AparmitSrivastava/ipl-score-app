@@ -28,7 +28,8 @@ export default function Statssection(){
                         className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center"
                         initial={{opacity:0 , y:20}}
                         animate={{opacity:1 , y:20}}
-                        transition={{delay:index*0.1 , duration:0.5}}>
+                        transition={{delay:index*0.1 , duration:0.5}}
+                        whileHover={{y:-5 , transition:{duration:0.2}}}>
                             IPL 2025 Stats and Highlights
                         </motion.div>
                     ))}
