@@ -1,7 +1,7 @@
 import axios from "axios"
 const API_URL = "https://cricket-live-line1.p.rapidapi.com";
 const HEADERS = {
-    'x-rapidapi-key': '27162da661msh286a0eb5c63ec20p116f6ajsnb730fdcb1a2',
+    'x-rapidapi-key': '27162da661msh286a0eb5c63ec20p116f6ajsnb730fdcb1a20',
     'x-rapidapi-host': 'cricket-live-line1.p.rapidapi.com'
 }
 
