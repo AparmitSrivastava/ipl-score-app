@@ -10,7 +10,7 @@ export default function HomePage() {
           </div>
 
           <div className="bg-opacity-90">
-            <TeamStanding />
+            <TeamStanding/>
           </div>
         </div>
       </div>
