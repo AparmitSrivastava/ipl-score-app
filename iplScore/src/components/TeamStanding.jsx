@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { getPointsTable } from "../services/api"
 import { LoadingSpinner } from "./ui/Loader"
-import { tr } from "framer-motion/client"
 export default function TeamStanding() {
 
     const [pointsTable, setpointsTable] = useState([])
@@ -14,7 +13,8 @@ export default function TeamStanding() {
                 const data = await getPointsTable();
                 setpointsTable(data)
             } catch (error) {
-                seterror("Unable to load data")
+                console.error("API ERROR:", error.response?.data || error.message || error);
+                throw error;
             } finally {
                 setloading(false)
             }
@@ -55,8 +55,9 @@ export default function TeamStanding() {
                         {pointsTable.map((item,index)=>(
                             <tr key={index} className={`${index % 2=== 0 ? 'bg-white': 'bg-gray-100'} hover:bg-gray-300 transition-color`}>
                                 <td className="px-4 py-3">
-                                    <div className="flex items-center space-x-3">
+                                    <div className="flex items-center space-x-3 justify-center">
                                         <img src={item.flag} alt={item.team} className="w-8 h-8 rounded-full object-contain" />
+                                        <span className="text-gray-700">{item.team}</span>
                                     </div>
                                 </td>
 
