@@ -3,4 +3,5 @@ A sleek and responsive IPL Score App built with **React** that fetches and displ
 
 ### Tech Stack used - 
 - React
+- Tailwind CSS
 - Restful API
